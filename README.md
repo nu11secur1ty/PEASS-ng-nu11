@@ -35,6 +35,8 @@ Find the **latest versions of all the scripts and binaries in [the releases page
 1. Download Procmon from Sysinternals
 2. Place procmon.exe in the same folder as DLL Digger
 ```
+[Procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)
+
 ### 🚀 Usage
 
 ```
