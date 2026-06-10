@@ -25,6 +25,68 @@ These tools search for possible **local privilege escalation paths** that you co
 ## Quick Start
 Find the **latest versions of all the scripts and binaries in [the releases page](https://github.com/peass-ng/PEASS-ng/releases/latest)**.
 
+# 🕵️ DLL Digger - Procmon LPE Hunter
+
+**Automated Procmon capture tool for finding DLL Hijacking & LPE vulnerabilities**
+
+## 📦 Setup
+
+```bash
+1. Download Procmon from Sysinternals
+2. Place procmon.exe in the same folder as DLL Digger
+
+### 🚀 Usage
+
+```
+winPEAS.exe
+```
+### What happens:
+
+- Program asks for a password 
+
+- Starts 60-second Procmon captures
+
+- Saves .pml files in the current folder
+
+### 📁 Output
+
+```
+capture_20241215_143022_1.pml
+capture_20241215_143022_2.pml
+```
+
+### 🔍 Find LPE Vulnerabilities
+
+- Open Procmon GUI
+
+- File → Open → select .pml file
+
+- Filter: Result is NAME NOT FOUND
+
+- Look for DLLs in writable folders:
+
+```
+C:\Temp\
+
+C:\Users\*\AppData\Local\
+
+C:\ProgramData\
+```
+
+
+### 💀 Exploit:
+
+1. Create malicious DLL
+
+2. Place it where DLL is missing
+
+3. Restart the process → SYSTEM shell
+
+### ⚠️ Legal
+For authorized security research only.
+
+---------------------------
+
 ## JSON, HTML & PDF output
 Check the **[parsers](./parsers/)** directory to **transform PEASS outputs to JSON, HTML and PDF**
 
