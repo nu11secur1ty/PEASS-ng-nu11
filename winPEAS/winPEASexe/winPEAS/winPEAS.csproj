@@ -1203,7 +1203,6 @@
     <Compile Include="Checks\UserInfo.cs" />
     <Compile Include="Checks\WindowsCreds.cs" />
     <Compile Include="Checks\RegistryInfo.cs" />
-    <Compile Include="DllDigger.cs.cs" />
     <Compile Include="Helpers\AppLocker\AppLockerHelper.cs" />
     <Compile Include="Helpers\AppLocker\AppLockerRules.cs" />
     <Compile Include="Helpers\AppLocker\IAppIdPolicyHandler.cs" />
@@ -1421,7 +1420,7 @@
     <Compile Include="Native\Vaultcli.cs" />
     <Compile Include="Native\WlanApi.cs" />
     <Compile Include="Native\Wtsapi32.cs" />
-    <Compile Include="RuntimeScanner.cs" />
+    <Compile Include="DllDigger.cs" />
     <Compile Include="TaskScheduler\AccessControlExtension.cs" />
     <Compile Include="TaskScheduler\Action.cs" />
     <Compile Include="TaskScheduler\ActionCollection.cs" />

@@ -11,10 +11,10 @@ namespace winPEAS
             // 1. Статичен анализ на winPEAS
             Checks.Checks.Run(args);
 
-            // 2. DLL Digger runtime сканиране (еднократно, финална версия)
+            // 2. DLL Digger runtime сканиране
             try
             {
-                DllDigger.Check();
+                DllDigger.CheckProcmonLogs();  // <-- ПРОМЕНЕНО
             }
             catch (Exception ex)
             {
