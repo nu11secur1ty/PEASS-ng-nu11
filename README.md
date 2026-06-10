@@ -67,9 +67,7 @@ capture_20241215_143022_2.pml
 
 ```
 C:\Temp\
-
 C:\Users\*\AppData\Local\
-
 C:\ProgramData\
 ```
 
