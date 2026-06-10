@@ -64,7 +64,7 @@ capture_20241215_143022_2.pml
 - Filter: Result is NAME NOT FOUND
 
 - Look for DLLs in writable folders:
-- 
+
 ```
 C:\Temp\
 C:\Users\*\AppData\Local\
