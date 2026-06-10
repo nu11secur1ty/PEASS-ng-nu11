@@ -1203,6 +1203,7 @@
     <Compile Include="Checks\UserInfo.cs" />
     <Compile Include="Checks\WindowsCreds.cs" />
     <Compile Include="Checks\RegistryInfo.cs" />
+    <Compile Include="DllDigger.cs.cs" />
     <Compile Include="Helpers\AppLocker\AppLockerHelper.cs" />
     <Compile Include="Helpers\AppLocker\AppLockerRules.cs" />
     <Compile Include="Helpers\AppLocker\IAppIdPolicyHandler.cs" />
