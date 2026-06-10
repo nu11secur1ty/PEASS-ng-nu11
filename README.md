@@ -34,7 +34,7 @@ Find the **latest versions of all the scripts and binaries in [the releases page
 ```bash
 1. Download Procmon from Sysinternals
 2. Place procmon.exe in the same folder as DLL Digger
-
+```
 ### 🚀 Usage
 
 ```
@@ -64,13 +64,12 @@ capture_20241215_143022_2.pml
 - Filter: Result is NAME NOT FOUND
 
 - Look for DLLs in writable folders:
-
+- 
 ```
 C:\Temp\
 C:\Users\*\AppData\Local\
 C:\ProgramData\
 ```
-
 
 ### 💀 Exploit:
 
