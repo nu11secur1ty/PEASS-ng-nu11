@@ -1,6 +1,6 @@
 # PEASS-ng - Privilege Escalation Awesome Scripts SUITE new generation
 
-![](https://github.com/peass-ng/PEASS-ng/raw/master/linPEAS/images/peass.png)
+[![](https://github.com/peass-ng/PEASS-ng/raw/master/linPEAS/images/peass.png)](https://github.com/peass-ng/PEASS-ng)
 
 ![](https://img.shields.io/badge/Black-Arch-black) ![](https://img.shields.io/badge/Arch-AUR-brightgreen) ![](https://img.shields.io/badge/Black%20Hat%20Arsenal-Asia%202020-red)
 
