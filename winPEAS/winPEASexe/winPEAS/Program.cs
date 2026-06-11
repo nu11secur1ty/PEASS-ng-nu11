@@ -8,21 +8,31 @@ namespace winPEAS
         [STAThread]
         public static void Main(string[] args)
         {
-            // 1. Статичен анализ на winPEAS
+            // 1. ПЪРВО: winPEAS статичен анализ (със своя clipboard output)
+            Console.WriteLine("[*] Running winPEAS Static Analysis...");
             Checks.Checks.Run(args);
 
-            // 2. DLL Digger runtime сканиране
+            // 2. СЛЕД КАТО winPEAS СВЪРШИ - разделител
+            Console.WriteLine("\n" + new string('=', 80));
+            Console.WriteLine("[*] winPEAS Static Analysis COMPLETED");
+            Console.WriteLine(new string('=', 80) + "\n");
+
+            // 3. ВТОРО: DLL Digger (чист, самостоятелен, без да пречи на никой)
             try
             {
-                DllDigger.CheckProcmonLogs();  // <-- ПРОМЕНЕНО
+                DllDigger.CheckProcmonLogs();
             }
             catch (Exception ex)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"[!] DLL Digger runtime scan failed: {ex.Message}");
+                Console.ResetColor();
             }
 
-            // 3. Край
-            Console.WriteLine("\n[*] winPEAS scan completed.");
+            // 4. КРАЙ
+            Console.WriteLine("\n[*] Full scan completed.");
+            Console.WriteLine("[*] Press Enter to exit...");
+            Console.ReadLine();
         }
     }
 }
